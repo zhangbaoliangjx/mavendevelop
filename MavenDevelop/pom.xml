@@ -1,0 +1,286 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>xin.codetop</groupId>
+	<artifactId>MavenDevelop</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>MavenDevelop Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- 1.日志 -->
+		<!-- 实现slf4j接口并整合 -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.7</version>
+		</dependency>
+
+		<!-- 2.数据库 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>
+			mysql-connector-java
+		</artifactId>
+			<version>5.1.37</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- DBCP2 连接池 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-pool2</artifactId>
+			<version>2.4.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-jta_1.1_spec</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<!-- c3p0 连接池 -->
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.1.2</version>
+		</dependency>
+
+		<!-- DAO: MyBatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>
+			mybatis
+		</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>
+			mybatis-spring
+		</artifactId>
+			<version>1.2.3</version>
+		</dependency>
+
+		<!-- 3.Servlet web -->
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>
+			standard
+		</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>
+			jstl
+		</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>
+			jackson-databind
+		</artifactId>
+			<version>2.5.4</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>
+			javax.servlet-api
+		</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+		<!-- 4.Spring -->
+		<!-- 1)Spring核心 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>
+			spring-core
+		</artifactId>
+			<version>4.1.7.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>
+			spring-beans
+		</artifactId>
+			<version>4.1.7.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>
+			spring-context
+		</artifactId>
+			<version>4.1.7.RELEASE</version>
+		</dependency>
+		<!-- 2)Spring DAO层 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>
+			spring-jdbc
+		</artifactId>
+			<version>4.1.7.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>
+			spring-tx
+		</artifactId>
+			<version>4.1.7.RELEASE</version>
+		</dependency>
+		<!-- 3)Spring web -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>
+			spring-web
+		</artifactId>
+			<version>4.1.7.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>
+			spring-webmvc
+		</artifactId>
+			<version>4.1.7.RELEASE</version>
+		</dependency>
+		<!-- 4)Spring test -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>
+			spring-test
+		</artifactId>
+			<version>4.1.7.RELEASE</version>
+		</dependency>
+
+		<!-- redis客户端:Jedis -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>
+			jedis
+		</artifactId>
+			<version>2.7.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.dyuproject.protostuff</groupId>
+			<artifactId>protostuff-core</artifactId>
+			<version>1.0.8</version>
+		</dependency>
+		<dependency>
+			<groupId>com.dyuproject.protostuff</groupId>
+			<artifactId>protostuff-runtime</artifactId>
+			<version>1.0.8</version>
+		</dependency>
+
+		<!-- Map工具类 -->
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp -->
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-pool/commons-pool -->
+		<dependency>
+			<groupId>commons-pool</groupId>
+			<artifactId>commons-pool</artifactId>
+			<version>1.5.4</version>
+		</dependency>
+		<!-- Jfinal -->
+		<dependency>
+			<groupId>com.jfinal</groupId>
+			<artifactId>jfinal</artifactId>
+			<version>3.2</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>MavenDevelop</finalName>
+		<plugins>
+			<!-- 编译用插件 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<!-- 打包发布用插件 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>    <!-- 命令为tomcat7:redeploy -->
+				<version>2.1</version>
+				<configuration>
+					<url>http://localhost:8080/manager/text</url>                <!-- tomcat7部署管理路径 -->
+					<username>admin</username>                                <!-- tomcat的管理员账号 -->
+					<password>admin</password>
+					<port>8080</port>
+					<server>tomcat7</server>
+					<path>/MavenDevelop</path>                            <!-- 部署路径 -->
+					<charset>UTF-8</charset>
+					<encoding>UTF-8</encoding>
+				</configuration>
+				
+				<!-- <groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat6-maven-plugin</artifactId>                    命令为tomcat6:redeploy
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>    命令为tomcat7:redeploy
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>        命令为tomcat:redeploy
+				<version>2.2</version>
+				<configuration>
+					<url>http://localhost:8080/manager</url>            tomcat6部署管理路径
+					<url>http://localhost:8080/manager/text</url>                tomcat7部署管理路径
+					<username>admin</username>                                tomcat的管理员账号
+					<password>admin</password>
+					<port>8080</port>
+					<path>/MavenDevelop</path>                            部署路径
+					<charset>UTF-8</charset>
+					<encoding>UTF-8</encoding>
+					运行redeploy命令前，要能正常访问http://localhost:8080/manager
+				</configuration> -->
+			</plugin>
+		</plugins>
+	</build>
+</project>

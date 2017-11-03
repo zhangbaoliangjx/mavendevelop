@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+	#for(order : orders)
+	<order>
+		<orderNo>#(order.orderNo)</orderNo>
+		<money>#(order.money)</money>
+	</order>
+	#end
+</orders>
